@@ -1,0 +1,12 @@
+/.direnv
+
+/target
+
+/.DS_Store
+/**/*.rs.bk
+/docker-compose.yaml
+
+/.env
+
+/video_backups/*
+!/video_backups/.gitkeep

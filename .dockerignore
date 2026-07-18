@@ -1,0 +1,12 @@
+/**
+
+!/src/**
+!/assets/**
+
+!/.cargo/**
+!/Cargo.toml
+!/Cargo.lock
+!/Dioxus.toml
+
+!/.env.example
+!/.env
