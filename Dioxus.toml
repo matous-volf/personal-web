@@ -1,0 +1,6 @@
+[web.app]
+title = "Matouš Volf"
+
+[application]
+tailwind_input = "src/styles/tailwind.css"
+tailwind_output = "assets/styles/tailwind.css"

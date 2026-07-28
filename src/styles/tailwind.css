@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Libre Baskerville";
+  font-display: swap;
+  src: url("/assets/fonts/libre_baskerville.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-display: swap;
+  src: url("/assets/fonts/jetbrains_mono.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "C64 Serif";
+  font-display: swap;
+  src: url("/assets/fonts/c64_serif.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Ubuntu Sans";
+  font-display: swap;
+  src: url("/assets/fonts/ubuntu_sans.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Alfa Slab One";
+  font-display: swap;
+  src: url("/assets/fonts/alfa_slab_one.ttf") format("truetype");
+}
+
+/* stylelint-disable-next-line */
+@theme {
+  --font-serif: "Libre Baskerville", "serif";
+  --font-mono: "JetBrains Mono", "monospace";
+  --font-pixel: "C64 Serif", "serif";
+  --font-ubuntu: "Ubuntu Sans", "sans";
+  --font-rust: "Alfa Slab One", "serif";
+  --animate-fade-in-down: slide-down-fade-in 300ms ease-out forwards;
+
+  @keyframes slide-down-fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-1rem);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
