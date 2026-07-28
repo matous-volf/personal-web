@@ -29,6 +29,6 @@ jobs:
         run: touch assets/styles/tailwind.css
 
       - name: Check
-        uses: https://codeberg.org/matous-volf/action-docker-build-check@26538db280c68fdb16424e0470941021ea998bc5 # v1.0.0
+        uses: https://codeberg.org/matous-volf/action-docker-build-check@9d295e047efbcb63918f552768b20993b5248ed8 # v4.0.0
         with:
           compose_file: ${{ matrix.compose_file }}
