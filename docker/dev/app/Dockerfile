@@ -5,10 +5,10 @@ RUN useradd -m -u 1000 -s /bin/bash app_user \
 
 USER app_user
 
-# renovate: version=v0.7.9
+# renovate: version=v0.7.10
 RUN cargo install --locked \
     --git https://github.com/DioxusLabs/dioxus \
-    --rev 3e43ffa6cf1488d5388c888eb5f2494a006ae6de \
+    --rev 57d6794ad60b949e5bd8aa282f6f8c3dc97a365e \
    dioxus-cli
 
 COPY --chown=app_user . /srv/app

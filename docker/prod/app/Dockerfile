@@ -9,10 +9,10 @@ RUN apk add --no-cache \
     openssl-dev=3.5.7-r0 \
     # renovate: repology=alpine_3_24/openssl-libs-static
     openssl-libs-static=3.5.7-r0 \
-    # renovate: version=v0.7.9
+    # renovate: version=v0.7.10
  && cargo install --locked \
      --git https://github.com/DioxusLabs/dioxus \
-     --rev 3e43ffa6cf1488d5388c888eb5f2494a006ae6de \
+     --rev 57d6794ad60b949e5bd8aa282f6f8c3dc97a365e \
     dioxus-cli --features disable-telemetry
 
 COPY . /srv/app
