@@ -103,11 +103,23 @@ pub(crate) fn Contact() -> Element {
                     }
                     li {
                         "e-mail: ",
-                        Link {
-                            class: "underline",
-                            to: "mailto:me@matousvolf.cz",
-                            new_tab: true,
-                            "me@matousvolf.cz"
+                        Localized {
+                            czech: rsx! {
+                                Link {
+                                    class: "underline",
+                                    to: "mailto:ja@matousvolf.cz",
+                                    new_tab: true,
+                                    "ja@matousvolf.cz"
+                                }
+                            },
+                            english: rsx! {
+                                Link {
+                                    class: "underline",
+                                    to: "mailto:me@matousvolf.cz",
+                                    new_tab: true,
+                                    "me@matousvolf.cz"
+                                }
+                            },
                         }
                         "."
                     }
