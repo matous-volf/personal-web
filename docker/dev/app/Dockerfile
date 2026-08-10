@@ -5,7 +5,11 @@ RUN useradd -m -u 1000 -s /bin/bash app_user \
 
 USER app_user
 
-RUN cargo install --git https://github.com/DioxusLabs/dioxus --rev 3e43ffa6cf1488d5388c888eb5f2494a006ae6de --locked dioxus-cli
+# renovate: version=v0.7.9
+RUN cargo install --locked \
+    --git https://github.com/DioxusLabs/dioxus \
+    --rev 3e43ffa6cf1488d5388c888eb5f2494a006ae6de \
+   dioxus-cli
 
 COPY --chown=app_user . /srv/app
 WORKDIR /srv/app
