@@ -23,10 +23,14 @@ pub(crate) fn RustCrates(greeting_is_finished: bool) -> Element {
                         class: "text-3xl font-rust",
                         Localized {
                             czech: rsx! {
-                                "Knihovní bedny v "
+                                "Knihovní bedny "
                                 span {
-                                    class: "text-[#f74c00]",
-                                    "Rustu"
+                                    class: "text-nowrap",
+                                    "v "
+                                    span {
+                                        class: "text-[#f74c00]",
+                                        "Rustu"
+                                    }
                                 }
                             },
                             english: rsx! {
