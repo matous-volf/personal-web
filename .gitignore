@@ -7,6 +7,3 @@
 /docker-compose.yaml
 
 /.env
-
-/video_backups/*
-!/video_backups/.gitkeep
