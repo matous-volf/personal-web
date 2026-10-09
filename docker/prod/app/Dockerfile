@@ -8,7 +8,7 @@ RUN apk add --no-cache \
     # renovate: repology=alpine_3_24/openssl-dev
     openssl-dev=3.5.9-r0 \
     # renovate: repology=alpine_3_24/openssl-libs-static
-    openssl-libs-static=3.5.7-r0 \
+    openssl-libs-static=3.5.9-r0 \
     # renovate: version=v0.7.10
  && cargo install --locked \
      --git https://github.com/DioxusLabs/dioxus \
