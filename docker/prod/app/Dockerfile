@@ -6,7 +6,7 @@ RUN apk add --no-cache \
     # renovate: repology=alpine_3_24/musl-dev
     musl-dev=1.2.6-r2 \
     # renovate: repology=alpine_3_24/openssl-dev
-    openssl-dev=3.5.7-r0 \
+    openssl-dev=3.5.9-r0 \
     # renovate: repology=alpine_3_24/openssl-libs-static
     openssl-libs-static=3.5.7-r0 \
     # renovate: version=v0.7.10
