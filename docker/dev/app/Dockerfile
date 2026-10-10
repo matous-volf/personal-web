@@ -1,4 +1,4 @@
-FROM rust:1.98.0-trixie@sha256:620dbcd124499c59e2406d3741574b5c5838cf9eb9656f0c3a03948f79b02959
+FROM rust:1.99.0-trixie@sha256:6ff07edce8775d0f64be7aba9197229407301bddf2054d62c27b541a6238a181
 
 RUN useradd -m -u 1000 -s /bin/bash app_user \
  && rustup target add wasm32-unknown-unknown
