@@ -10,9 +10,9 @@ RUN apk add --no-cache \
     # renovate: repology=alpine_3_24/openssl-libs-static
     openssl-libs-static=3.5.9-r0 \
     # renovate: version=v0.7.10
- && cargo install --locked \
-     --git https://github.com/DioxusLabs/dioxus \
-     --rev 57d6794ad60b949e5bd8aa282f6f8c3dc97a365e \
+    && cargo install --locked \
+    --git https://github.com/DioxusLabs/dioxus \
+    --rev 57d6794ad60b949e5bd8aa282f6f8c3dc97a365e \
     dioxus-cli --features disable-telemetry
 
 COPY . /srv/app
@@ -29,7 +29,7 @@ RUN chown -R 1000:1000 /srv/app
 
 WORKDIR /srv/app
 
-HEALTHCHECK CMD curl --fail -H "Accept: text/html" http://localhost || exit 1
+HEALTHCHECK CMD ["curl", "--fail", "-H", "Accept: text/html", "http://localhost"]
 
 USER 1000:1000
 
